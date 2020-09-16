@@ -1,0 +1,58 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.5",
+  "version": "1.0.0",
+  "id": "e70af585-8387-4410-905c-ca23a08ad446",
+  "packageName": "com.teams.sample.teamsconversationbot",
+  "developer": {
+    "name": "Microsoft",
+    "websiteUrl": "https://dev.botframework.com",
+    "privacyUrl": "https://privacy.microsoft.com",
+    "termsOfUseUrl": "https://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default.aspx"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "name": {
+    "short": "Goblet of Fire Bot",
+    "full": "Goblet of Fire Bot"
+  },
+  "description": {
+    "short": "A bot which can list the names of group chat participants in random order",
+    "full": "A bot which can list the names of group chat participants in random order"
+  },
+  "accentColor": "#FFFFFF",
+  "bots": [
+    {
+      "botId": "e70af585-8387-4410-905c-ca23a08ad446",
+      "scopes": [
+        "personal",
+        "groupchat",
+        "team"
+      ],
+      "supportsFiles": false,
+      "isNotificationOnly": false,
+      "commandLists": [
+        {
+          "scopes": [
+            "personal",
+            "groupchat",
+            "team"
+          ],
+          "commands": [
+            {
+              "title": "Draw Names",
+              "description": "Draws the names of each of the members of the group chat and lists them in random order"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": []
+}
